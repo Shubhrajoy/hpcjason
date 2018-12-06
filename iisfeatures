@@ -1,0 +1,6 @@
+$url = "https://test8cont8diag.blob.core.windows.net/testcont/features.xml"
+$output = "$PSScriptRoot\features.xml"
+Invoke-WebRequest -Uri $url -OutFile $output
+Import-Module ServerManager
+$(Import-Clixml .\Features.xml) | Add-WindowsFeature
+Restart-Computer -Force
