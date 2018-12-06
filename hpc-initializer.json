@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
 	"contentVersion": "1.0.0.0",
-	"parameters":{};
+	"parameters":{}
 	"variables":
 	{
 		"clusterName": "CZWSMXTHNSWA01",
@@ -27,7 +27,7 @@
 		"certThumbprint": "ED4C4D785BF296FE4C7053CC2E2F928A88DE3B87",
 		"enableAcceleratedNetworking": "No",
 	},
-	resources: [
+	"resources": [
 	{
 		"name": "hpcdeployment",
 		"type": "Microsoft.Resources/deployments",
